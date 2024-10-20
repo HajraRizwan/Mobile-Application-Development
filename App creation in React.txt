@@ -1,0 +1,21 @@
+Creating an App in React Native
+
+# Step 1: Open Terminal and navigate to your desired project directory
+cd path/to/your/folder
+
+# Step 2: Create a new Expo app
+npx create-expo-app@latest
+
+# Step 3: When prompted, choose the option "blank" for a new project template
+
+# Step 4: Navigate into your project folder
+cd your_project_name
+
+# Step 5: Open the Android emulator via Android Studio
+
+# Step 6: Run the app on the emulator
+npm run android
+
+# Step 7: For mobile device testing:
+# - Download the Expo Go app from your mobile device's app store
+# - Scan the QR code displayed in your terminal or browser using the Expo Go app

@@ -1,0 +1,9 @@
+cd path/to/your/project              # Change to your project directory
+git clone https://github.com/username/repo.git  # Clone a repository (if needed)
+git init                              # Initialize Git (only if this is a new repo)
+git branch branch_name                # Create a new branch
+git checkout branch_name               # Switch to the new branch
+git add .                             # Stage all changes
+git commit -m "Initial commit"       # Commit changes with a message
+git remote add origin https://github.com/yourusername/repositoryname.git  # Link to GitHub
+git push -u origin master             # Push changes to GitHub

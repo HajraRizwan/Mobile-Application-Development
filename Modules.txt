@@ -1,0 +1,86 @@
+// Modules in Node.js
+// Modules are a way to organize and reuse code. In Node.js, there are two primary ways to create and manage modules: CommonJS and ECMAScript (ES6) Modules.
+
+
+
+// 1.  CommonJS Modules
+// Syntax: CommonJS is the traditional module system in Node.js. It uses require() to import modules and module.exports or exports to export functionalities.
+
+// In provider.js
+const obj = { name: 'aatiqa', age: 27 };
+module.exports = obj;
+
+// In another file
+const obj = require('./provider.js');
+console.log(obj); // Output: { name: 'aatiqa', age: 27 }
+
+
+
+
+
+
+// 2.  ECMAScript (ES6) Modules
+// Syntax: ES6 modules use import and export statements. You need to specify "type": "module" in package.json to use ES6 modules.
+
+// -- Name Export
+// In person.js
+const name = "Jesse";
+const age = 40;
+export { name, age };
+
+// In another file
+import { name, age } from './person.js';
+console.log(name, age); // Output: Jesse 40
+
+
+
+
+// --Default Export
+// In message.js
+const message = () => {
+    const name = "Jesse";
+    const age = 40;
+    return `${name} is ${age} years old.`;
+  };
+  export default message;
+  
+  // In another file
+  import message from './message.js';
+  console.log(message()); // Output: Jesse is 40 years old.
+
+  
+
+
+//   Creating and Exporting Functions
+//   You can create an array of objects inside a function and export it using CommonJS or ES6 modules.
+// 1.  CommonJS Example
+// In data.js
+function getData() {
+    return [
+      { name: 'Alice', age: 30 },
+      { name: 'Bob', age: 25 }
+    ];
+  }
+  module.exports = getData;
+  
+  // In another file
+  const getData = require('./data.js');
+  console.log(getData()); // Output: Array of objects
+
+  
+
+
+
+//   2.  ECMAScript 
+// data.js
+export function getData() {
+  return [
+    { name: 'Alice', age: 30 },
+    { name: 'Bob', age: 25 }
+  ];
+}
+
+// anotherFile.js
+import { getData } from './data.js';
+console.log(getData()); // Output: Array of objects
+
