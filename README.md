@@ -1,8 +1,6 @@
-# Mobile-Application-Development
-This repository contains everything related to the development of a complete mobile application from start to finish. 
-It includes:  
-1. JavaScript Logic
-2. Frontend Development
-3. Backend Development
-4. Database Integration
-5. Project Scope and Updates
+# Project Title: eTurn App
+
+## Group Members:
+1. **Hajra Rizwan - 45504**  
+2. **Mahnoor Asif - 44957**  
+3. **Ayesha Mukhtar Asad - 44587**
